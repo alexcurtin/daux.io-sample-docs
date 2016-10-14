@@ -19,7 +19,7 @@
         "float": true,
         "inherit_index": true,
 
-        "repo": "justinwalsh/daux.io",
+        "repo": "https://github.com/alexcurtin/daux.io-sample-docs",
         "edit_on_github": "justinwalsh/daux.io/blob/master/docs",
         "twitter": ["justin_walsh", "todaymade"],
         "google_analytics": "UA-12653604-10",
