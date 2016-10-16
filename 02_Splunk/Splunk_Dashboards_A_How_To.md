@@ -21,7 +21,7 @@ Thats it for building out that particular report, now its time to add the report
 ## The Dashboard
 From the top horizontal navigation bar click on `Dashboards` and then the top right green button for `Create New Dashboard`. Give the dashboard a name and set the permissions to `Shared in App`. Once the dashboard has loaded click `+ Add Panel` and select `New From Report` and find your report, or simple search for your earlier created report by name. This will add your report to the dashboard. Continue this process for each report.
 
-For reference you can view the Dashboard at (https://westfieldlabs.splunkcloud.com/en-US/app/wflabs_users/consumer_websites__performance) to see how many reports can come together to bring value to an at-a-glance dashboard. 
+For reference you can view the [Dashboard](https://westfieldlabs.splunkcloud.com/en-US/app/wflabs_users/consumer_websites__performance) to see how many reports can come together to bring value to an at-a-glance dashboard. 
 
 ## Alerting and Messaging
 TBC
