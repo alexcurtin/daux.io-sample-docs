@@ -1,5 +1,3 @@
-#AEM Deploy outline for UAT environment.
-
 ## Prepwork:
 
 * Specs kicks off the Deploy UAT jobs, so disable these jobs as necessary based on why this manual deploy needs to happen. Usually Centre/Bluegrass/GPP need to be disabled to prevent teams from accidentally merging and deploying. Bundles should normally be disabled.
