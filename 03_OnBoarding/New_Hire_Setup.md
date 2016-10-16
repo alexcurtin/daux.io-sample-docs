@@ -1,5 +1,3 @@
-# New hire setup
-
 These steps need to be done before a user starts. It takes nearly a full week to complete this process.
 
 ## Badge

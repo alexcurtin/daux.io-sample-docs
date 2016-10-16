@@ -1,5 +1,3 @@
-# Getting started
-
 Welcome to Westfield Labs!
 
 ## Passwords

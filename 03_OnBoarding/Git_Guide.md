@@ -1,5 +1,3 @@
-# Git guide
-
 ## Install
 
 If your computer doesn't already have `git`, follow these instructions to get `git` with bash-completions.

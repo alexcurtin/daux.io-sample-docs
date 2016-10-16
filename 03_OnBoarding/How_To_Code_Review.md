@@ -1,5 +1,3 @@
-# How to code review
-
 ## Writing a Pull Request
 
 A Pull Request (PR) is a request for code review.
