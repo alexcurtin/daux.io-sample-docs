@@ -19,15 +19,14 @@
         "float": true,
         "inherit_index": true,
 
-        "repo": "https://github.com/alexcurtin/daux.io-sample-docs",
+        "repo": "alexcurtin/daux.io-sample-docs",
         "edit_on_github": "justinwalsh/daux.io/blob/master/docs",
         "twitter": ["justin_walsh", "todaymade"],
         "google_analytics": "UA-12653604-10",
         "links": {
             "Download": "https://github.com/justinwalsh/daux.io/archive/master.zip",
             "GitHub Repo": "https://github.com/justinwalsh/daux.io",
-            "Help/Support/Bugs": "https://github.com/justinwalsh/daux.io/issues",
-            "Made by Todaymade": "http://todaymade.com"
+            "Help/Support/Bugs": "https://github.com/justinwalsh/daux.io/issues"
         }
     }
 }
