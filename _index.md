@@ -1,5 +1,5 @@
 <p class="lead">
-	<strong>Daux.io</strong> is a documentation generator that uses a simple folder structure and Markdown files to create custom documentation on the fly. It helps you create great looking documentation in a developer friendly way.
+	<strong>Labs ProdOps Docs</strong> is a documentation space generated using <strong>Daux.io</strong> - a documentation generator that uses a simple folder structure and Markdown files to create custom documentation on the fly. It helps you create great looking documentation in a developer friendly way. Edit your pages in Markdown, add them to a folder and push your changes and violà - great documentation.
 </p>
 
 <hr/>
