@@ -8,7 +8,7 @@ This is the central hub for any Production Operations related documentation or t
 
 For specific documentation regarding any code or configuration, see the respective repository below.
 
-#Repositories
+## Repositories
 - [AEM Routing](https://github.com/westfield/aem_routing)
 - [AEM Centre](https://github.com/westfield/aem_centre)
 - [AEM GPP (Global Publishing Platform)](https://github.com/westfield/aem_gpp)
@@ -16,25 +16,25 @@ For specific documentation regarding any code or configuration, see the respecti
 - [AEM Bundles](https://github.com/westfield/aem_bundles)
 - [AEM Deploy](https://github.com/westfield/aem_deploy)
 
-#Environments
+## Environments
 
-##UAT
+## UAT
 
-###Author
+### Author
     author01-west.uat.wflops.net
 
-###Publishers
+### Publishers
     publisher01-west.uat.wflops.net
     publisher02-west.uat.wflops.net
 
 [AEM Deploy outline for UAT environment](https://github.com/westfield/prodops/wiki/AEM-Deploy-outline-for-UAT-environment)
 
-##PROD
+## PROD
 
-###Author
+### Author
     author01.production.us-west-1.aws.wflops.net
 
-###Publishers
+### Publishers
     publisher01.production.us-west-1.aws.wflops.net
     publisher02.production.us-west-1.aws.wflops.net
     publisher03.production.us-west-1.aws.wflops.net
@@ -44,13 +44,13 @@ For specific documentation regarding any code or configuration, see the respecti
     publisher03.production.us-east-1.aws.wflops.net
     publisher04.production.us-east-1.aws.wflops.net
 
-###Dispatcher
+### Dispatcher
 
-##Production
+## Production
 
-###Author
+### Author
 
-###Publisher
+### Publisher
 
 
-###Dispatcher
+### Dispatcher
