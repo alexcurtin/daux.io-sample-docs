@@ -163,7 +163,7 @@ git push github_username my-cool-feature:my-cool-feature
 # or run `git pull-request` to use your local $EDITOR
 ```
 
-See [how to code review](./how-to-code-review.md) for a commit message example, and the Git project's [commit guidelines](https://git-scm.com/book/ch5-2.html#Commit-Guidelines) for more explanation.
+See [how to code review](./How_To_Code_Review.md) for a commit message example, and the Git project's [commit guidelines](https://git-scm.com/book/ch5-2.html#Commit-Guidelines) for more explanation.
 
 ### Updating an existing PR
 
@@ -198,11 +198,11 @@ git push --force github_username my-cool-feature:my-cool-feature
 
 ### How to write a Pull Request
 
-See [How to code review](./how-to-code-review.md).
+See [How to code review](./How_To_Code_Review.md).
 
 ### How review code
 
-See [How to code review](./how-to-code-review.md).
+See [How to code review](./How_To_Code_Review.md).
 
 ### Merging
 
