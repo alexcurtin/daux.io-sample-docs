@@ -85,7 +85,7 @@ Most of these are available from Homebrew or [Homebrew Cask](https://caskroom.gi
 
 ## Git setup
 
-See [Git guide](./git-guide.md)
+See [Git guide](./Git_Guide.md)
 
 ## Editor configuration
 
