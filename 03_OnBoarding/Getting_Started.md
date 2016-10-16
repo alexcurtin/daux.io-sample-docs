@@ -2,8 +2,6 @@
 
 Welcome to Westfield Labs!
 
-This doc is available at [github.com/westfield/prodops/blob/master/onboarding/getting-started.md](github.com/westfield/prodops/blob/master/onboarding/getting-started.md).
-
 ## Passwords
 
 Secure your passwords! You only need to remember three passwords:
