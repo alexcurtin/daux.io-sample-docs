@@ -22,12 +22,11 @@
 
         "repo": "alexcurtin/daux.io-sample-docs",
         "edit_on_github": "alexcurtin/daux.io-sample-docs/blob/master",
-        "twitter": ["justin_walsh", "todaymade"],
         "google_analytics": "UA-12653604-10",
         "links": {
-            "Download": "https://github.com/justinwalsh/daux.io/archive/master.zip",
-            "GitHub Repo": "https://github.com/justinwalsh/daux.io",
-            "Help/Support/Bugs": "https://github.com/justinwalsh/daux.io/issues"
+            "Download": "https://github.com/alexcurtin/daux.io-sample-docs/archive/master.zip",
+            "GitHub Repo": "https://github.com/alexcurtin/daux.io-sample-docs",
+            "Help/Support/Bugs": "https://github.com/alexcurtin/daux.io-sample-docs/issues"
         }
     }
 }
