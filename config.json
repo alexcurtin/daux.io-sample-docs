@@ -4,7 +4,7 @@
     "author": "Alex Curtin",
     "image": "app.png",
     "ignore": {
-            "files": ["Work_In_Progress.md"],
+            "files": ["README.md"],
             "folders": ["99_Not_Ready"]
     },
     "live": {
@@ -20,13 +20,13 @@
         "inherit_index": true,
         "search": true,
 
-        "repo": "alexcurtin/daux.io-sample-docs",
-        "edit_on_github": "alexcurtin/daux.io-sample-docs/blob/master",
+        "repo": "westfield/daux",
+        "edit_on_github": "westfield/daux/blob/master",
         "google_analytics": "UA-12653604-10",
         "links": {
-            "Download": "https://github.com/alexcurtin/daux.io-sample-docs/archive/master.zip",
-            "GitHub Repo": "https://github.com/alexcurtin/daux.io-sample-docs",
-            "Help/Support/Bugs": "https://github.com/alexcurtin/daux.io-sample-docs/issues"
+            "Download": "https://github.com/westfield/daux/archive/master.zip",
+            "GitHub Repo": "https://github.com/westfield/daux",
+            "Help/Support/Bugs": "https://github.com/westfield/daux/issues"
         }
     }
 }
