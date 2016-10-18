@@ -5,7 +5,7 @@
     "image": "app.png",
     "ignore": {
             "files": ["README.md"],
-            "folders": ["99_Not_Ready"]
+            "folders": ["99_Not_Ready_To_Go"]
     },
     "live": {
         "clean_urls": true
