@@ -1,5 +1,5 @@
 
-AEM Deployment Failures
+## AEM Deployment Failures
 
 AEM deployments that the Web Squad do are different from your usual Heroku deployments and therefore have a different troubleshooting process. This is because AEM was built on a different stack and is hosted "in-house" on our own Amazon Web Services instances.
 
