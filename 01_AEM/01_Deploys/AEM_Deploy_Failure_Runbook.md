@@ -1,12 +1,13 @@
-#AEM Deployment Failures
+
+## AEM Deployment Failures
 
 AEM deployments that the Web Squad do are different from your usual Heroku deployments and therefore have a different troubleshooting process. This is because AEM was built on a different stack and is hosted "in-house" on our own Amazon Web Services instances.
 
-##The Basics
+## The Basics
 
 [Prod Ops AEM Wiki](https://github.com/westfield/prodops/wiki/AEM)
 
-##Testing
+## Testing
 
 
 [AEM Deploy Specs](https://github.com/westfield/aem_deploy/blob/master/spec/acceptance/publisher_tests/url_check_spec.rb)
@@ -23,7 +24,7 @@ The test suite checks for:
 
 If any page experiences any of these errors, the test suite fails that publisher instance and does not proceed with placing the instance back in the ELB and stops the deployment. This leaves the West/East region with only 3 publisher instances instead of 4, but with different code packages depending on where the deployment stopped. This means that end-users may have different browsing experiences based on which publisher they’re directed to by the ELB.
 
-##Test Failures
+## Test Failures
 
 1. **Response code**
 
@@ -82,11 +83,11 @@ To "recompile":
 
 		5. If the tests pass, go ahead and kick off the deploy again by manually triggering via Jenkins (test.westfield.io/job/aem_<repo name>-deploy-<environment>)
 
-##I don’t see my changes
+## I don’t see my changes
 
 The first step is to ask the developer to validate whether or not they can see their code changes if they hit the publisher instances directly. Hitting the publisher instance directly bypasses the Fastly CDN layer and doesn’t serve up cached content, which means that if the changes are visible while hitting the publisher directly, then we’ve got a caching issue:
 
-###Caching issues
+### Caching issues
 There’s a few places where caching can be an issue for the deploy:
 
 * **Dispatcher caching**
@@ -105,7 +106,7 @@ There’s a few places where caching can be an issue for the deploy:
 
 If the issue is determined not to be a caching issue, check to see whether the content packages were uploaded and installed successfully:
 
-###Package not installed
+### Package not installed
 
 This one can be tricky to notice, as it’s not exactly immediately apparent if you don’t know to look for it. In the Jenkins deploy console output, look for a line that states something like:
 
@@ -119,7 +120,7 @@ If this line doesn’t appear, then there’s a network failure somewhere betwee
 
 Note: There’s also one rare occasion where we cycled out AEM admin credentials, which are configured as ENV vars in Jenkins. If the admin credentials were changed recently, check to make sure that the ENV vars are updated for each of the AEM jobs in Jenkins.
 
-###Issues evicting a publisher instance or waiting for publisher to be healthy
+### Issues evicting a publisher instance or waiting for publisher to be healthy
 
 There are rare instances where the build server encounters an issue while attempting to evict or reinstate each publisher instance from the ELB. You can view the script here:
 
