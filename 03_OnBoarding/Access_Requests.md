@@ -27,18 +27,18 @@ Here’s a list of everything Ops owns:
 | Github | IPA |
 | Heroku | Fastly |
 | Jenkins | DigiCert |
-| Hockey App (Fernando Saragoca) | 
-| Service Now |
-| Lastpass |
-| Apigee |
-| Google Apps | 
-| Google Analytics (ED&A Asim/Wayne) |
-| Google Search Console (Temporarily managed by Ops) |
-| Google Developer Console |
-| iTunes |
-| Algolia |
-| Gigya |
-| Push.io |
+| Hockey App (Fernando Saragoca) |  |
+| Service Now |  |
+| Lastpass |  |
+| Apigee |  |
+| Google Apps |  | 
+| Google Analytics (ED&A Asim/Wayne) |  |
+| Google Search Console (Temporarily managed by Ops) |  |
+| Google Developer Console |  |
+| iTunes |  |
+| Algolia |  |
+| Gigya |  |
+| Push.io |  |
 
 * Slack/Jira/Confluence are owned by Eric McGovern, so direct any requests regarding these platforms to him.
 
