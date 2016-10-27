@@ -39,6 +39,7 @@ Here’s a list of everything Ops owns:
 | Algolia |  |
 | Gigya |  |
 | Push.io |  |
+| Jibestream UXM |  |
 
 * Slack/Jira/Confluence are owned by Eric McGovern, so direct any requests regarding these platforms to him.
 
@@ -153,3 +154,18 @@ This is a service from Oracle Responsys that handles our mobile push notificatio
 Managed by Prod Ops but used primarily by the Messaging Squad (Lauren Slack Product lead) on the US/UK mobile apps, with most focus on the UK app at the moment.
 
 Approval for access to any region’s app will need to come from Lauren Slack. To grant access, go to [https://manage.pushio.com/](https://manage.pushio.com/) and log in with the `doperations@westfield.com` account. From there, you’ll see a list of apps, 2 for each region, one of which is labeled as a “Dev” app. Click into the app that you want to grant access to in order to see its interface. Then, click the “Team” tab and click the “Invite a Team Member” button, which will pop up an email address field. Enter in the Westfield managed email address for the person you need to grant access to and hit “Invite”. The new user will appear in the Team list and from there, you can click on the newly invited user to edit permission levels, which will need to be provided by Lauren.
+
+## Jibestream UXM
+Jibestream is the backend engine that powers Westfield's centre maps. Jibestream UXM is the "User Experience Manager" (User Interface) for administering maps on those properties. This interface will be placed behind a VPN in the near future so make sure you have access to the WFLOps VPN in order to access UXM.
+
+Jibestream UXM is used by the Maps team as well as the Content Managers. Helen Lam is the Product Manager here and should be your POC for access requests.
+
+To grant access, first, determine if you need to hit UAT or Production. Then, visit either [https://maps.uat.westfield.io/](https://maps.uat.westfield.io/) or [https://maps.westfield.io/](https://maps.westfield.io/). Log in with the Admin credentials located in Lastpass. Once logged in, click on the `Permissions` tab on the left side navigation menu to administer users. You'll see two sections, `Users` and `Roles`. Under `Users`, click `New User` to pop up the User Details window where you will need to fill in the details for the new user. Some notes on the fields:
+
+* User ID: Use the first part of the user's Westfield email address (ex. jsmith from jsmith@us.westfield.com).
+* Role: Choose the most appropriate role for this user from the drop down menu.
+* Projects: Assign all of the relevant properties/centres that this user will need access to.
+
+Known Issues:
+
+* Sometimes a user can be locked out of their account because they've somehow become inactive. When this happens, just locate the user and edit the user's status to `Active` in order to allow access again. You may need to locate the user in one of the properties they're assigned to, as the default login is to the `Root` property.
