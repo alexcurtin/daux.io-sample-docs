@@ -17,7 +17,7 @@ Here’s a list of everything Ops owns:
 | **General** | **Prod Ops Specific** |
 |---|---|
 | Create | Pager Duty |
-| Okta\Okta Preview | Pingdom |
+| Okta/Okta Preview | Pingdom |
 |Slack (Eric McGovern)| CSC Global |
 | New Relic | Dynect |
 | Papertrail (deprecated) | StatusPage.io |
