@@ -127,3 +127,14 @@ There are rare instances where the build server encounters an issue while attemp
 [https://github.com/westfield/aem_deploy/blob/master/scripts/classes/load_balancer.rb](https://github.com/westfield/aem_deploy/blob/master/scripts/classes/load_balancer.rb)
 
 If there’s an issue here, triage to a Production Engineer for investigation. The process will involve logging on to AWS console and checking to make sure the ELB and publisher instances are truly failing/unhealthy.
+
+### I don't see my Java changes
+
+If a developer has made Java changes and those changes aren't apparent after the deploy, the most common item to check is the PauseInstallation node. The difficulty comes in determining which server would be afflicted. If it's the Author, well, there's only one Author to check. If it's not, then you'll have to go through all 8 Publisher instances to check this node.
+
+1. Log in to the instance at `/crx/de/index.jsp` using the Admin credentials in Lastpass. Example: `http://publisher02.production.us-east-1.aws.wflops.net:4503/crx/de/index.jsp`
+2. Once logged in, you should be at the `Develop` tab where you'll see a file tree section on the left, and a search bar above that. Using either the tree or the search bar, navigate to `/system/sling/installer/jcr/pauseInstallation` to access that node.
+3. Under that node, there may be another that looks like a random string of characters. This is basically a lock on AEM during the deploy in order to prevent any errant or trigger happy installations on top of the initial one. If the node exists, it means the deploy was interrupted at some point during the install.
+4. Right click on that node and select `Delete` to remove that node.
+5. For that publisher/author instance, go to `/system/console/bundles` and look for the `Centre Bundle` to verify that the version number is updated. You may need to click `Refresh` in order to update.
+6. If this doesn't work, it may be prudent to manually reinstall the package on the isntance(s) that didn't handle the install properly, then have a Prod Eng member investigate the issue.
