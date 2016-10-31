@@ -11,7 +11,7 @@ Once you have the CSV file of the newly programmed Okta YubiKeys, upload the CSV
 
 ### How to Assign the Programmed YubiKey to a User
 
-_A PDF version of these instructions can be found [here](yubikey_setup_instructions.pdf) to share to new users_.
+_A PDF version of these instructions can be found [here](/assets/yubikey_setup_instructions.pdf) to share to new users_.
 
 1. Log into [Okta](https://westfieldlabs.okta.com).
 2. Click on **Settings** under your Name at the top of the menu.
