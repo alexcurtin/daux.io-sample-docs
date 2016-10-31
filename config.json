@@ -2,10 +2,10 @@
     "title": "Labs ProdOps Docs",
     "tagline": "A Place to Document Anything and Everything",
     "author": "Alex Curtin",
-    "image": "app.png",
+    "image": "assets/app.png",
     "ignore": {
             "files": ["README.md"],
-            "folders": ["99_Not_Ready_To_Go!"]
+            "folders": ["images"]
     },
     "live": {
         "clean_urls": true
