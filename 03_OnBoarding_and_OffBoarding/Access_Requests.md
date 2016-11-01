@@ -41,7 +41,6 @@ Here’s a list of everything Ops owns:
 | Push.io |  |
 | Jibestream UXM |  |
 
-
 * Slack/Jira/Confluence are owned by Eric McGovern, so direct any requests regarding these platforms to him.
 
 * Google Analytics is owned by Asim and the ED&A team, so direct any requests to Asim and his team.
