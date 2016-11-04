@@ -69,10 +69,11 @@ No script written to automate user retrieval yet.
 
 1. Log in to [Analytics](https://analytics.google.com/analytics/web) with your Google Apps user under your Westfield email. It's important to note that if your user isn't granted Admin access, then you won't be able to retrieve the user list.
 2. If you do not see all 4 folders, then you do not have the necessary admin privileges:
-	- Westfield Digital Business
-	- Westfield Labs
-	- Westfield UK
-	- Westfield US
+
+	* Westfield Digital Business
+	* Westfield Labs
+	* Westfield UK
+	* Westfield US
 
 3. Click the `Admin` tab towards the top.
 4. 3 columns will load. Under `Account`, you should see `Westfield Digital Business`. Under that, click `User Management`. The other 2 columns will disappear, replaced by a list of users assigned to this property.
