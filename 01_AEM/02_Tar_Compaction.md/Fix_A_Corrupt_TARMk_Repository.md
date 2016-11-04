@@ -53,6 +53,18 @@
 
 		rm -rf crx-quickstart/repository/segmentstore/*tar.bak
 
+### Remove async index
+
+- Open the console and load the rmNode class; paste your rmNode lines into the console
+
+		$ java -Xmx4096m -jar oak-run-1.2.18.jar console crx-quickstart/repository/segmentstore
+		$ :load https://gist.githubusercontent.com/stillalex/43c49af065e3dd1fd5bf/raw/9e726a59f75b46e7b474f7ac763b0888d5a3f0c3/rmNode.groovy
+		$ rmNode(session, "/:async")
+
+- Start aem
+- Wait for it to fully boot
+- Stop AEM
+
 #### Run tar compaction
 
 - Create the directory for compaction logs: `mkdir /mnt/aem/dumps`
