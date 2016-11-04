@@ -1,6 +1,6 @@
 ## Fix A Corrupt TARMk Repository
 
-####Disable online compaction
+#### Disable online compaction
 
 - Go to CRXDE Lite path - /libs/granite/operations/config/maintenance/granite:daily/granite:RevisionGC
   - Changed run mode from crx3 to crx3-disabled
@@ -21,7 +21,7 @@
 - Disconnect from shell and reconnect to get updated ulimits, check with `ulimit -n`
 - Change directory to `/mnt/aem/` for all following commands
 
-####Count nodes
+#### Count nodes
 
 	$ java -Xmx4096m -jar oak-run-1.2.18.jar console crx-quickstart/repository/segmentstore
 	$ :load https://gist.githubusercontent.com/stillalex/e7067bcb86c89bef66c8/raw/d7a5a9b839c3bb0ae5840252022f871fd38374d3/childCount.groovy
@@ -33,7 +33,7 @@
 - strip just the node paths
 - put in format: rmNode(session, "path to corrupt node")
 
-####Remove nodes
+#### Remove nodes
 
 - Open the console and load the rmNode class; paste your rmNode lines into the console
 
@@ -53,7 +53,7 @@
 
 		rm -rf crx-quickstart/repository/segmentstore/*tar.bak
 
-####Run tar compaction
+#### Run tar compaction
 
 - Create the directory for compaction logs: `mkdir /mnt/aem/dumps`
 - Create file: /mnt/aem/logback-compaction.xml
