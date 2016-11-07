@@ -5,11 +5,12 @@
 - Go to CRXDE Lite path - /libs/granite/operations/config/maintenance/granite:daily/granite:RevisionGC
   - Changed run mode from crx3 to crx3-disabled
   - Save All
-  - stop aem `sudo -u aem /mnt/aem/crx-quickstart/bin/stop` wait for the process to finish.
 
 ## FIX ALL THE THINGS
 
 - SSH to author
+- stop monit `sudo service monit stop`
+- stop aem `sudo -u aem /mnt/aem/crx-quickstart/bin/stop` wait for the process to finish.
 - switch to the aem user `sudo su - aem`
 - check ulimit for aem user: `ulimit -n`
 	- if it is default: 1024
@@ -60,10 +61,6 @@
 		$ java -Xmx4096m -jar oak-run-1.2.18.jar console crx-quickstart/repository/segmentstore
 		$ :load https://gist.githubusercontent.com/stillalex/43c49af065e3dd1fd5bf/raw/9e726a59f75b46e7b474f7ac763b0888d5a3f0c3/rmNode.groovy
 		$ rmNode(session, "/:async")
-
-- Start aem
-- Wait for it to fully boot
-- Stop AEM
 
 #### Run tar compaction
 
