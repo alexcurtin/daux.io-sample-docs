@@ -1,5 +1,7 @@
 # User Audit Exports
 
+### NOTE: Never remove a user under a `doperations` email alias, as this is the account owner that Ops uses for master control.
+
 For the monthly audit, there are 5 systems that Ops does not own but helps manage. However, Ops doesn't need to perform the actual audits, only obtain a list of all current users that have access, then send them off to the owners of those services. These services are:
 
 * Slack - scripted
