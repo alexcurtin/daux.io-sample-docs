@@ -130,6 +130,33 @@ Nik Linsteadt oversees anything API related and so developer API keys are manage
 
 To grant access, go to [https://enterprise.apigee.com/platform/westfieldlabs/](https://enterprise.apigee.com/platform/westfieldlabs/) and click on the `Admin` tab and select `Organization Users` to invite a user by email address. Apigee does support Okta SSO but it is not currently implemented.
 
+## Google Apps
+
+## Google Analytics
+
+## Google Search Console
+
+This console provides analytics on Search of any property that you set up within the console, which includes things like crawl errors, traffic, etc. It's mainly a Search Engine Optimization tool, which is utilized by the **Web Squad** and Marketing teams. Access requests should come from Market Leads (US/Uk/AU/NZ).
+
+To grant access, log in to [Google Search Console](https://www.google.com/webmasters/tools/home) with your Google Apps account that has `Owner` privileges on the main properties. There are only 8 properties here to be concerned with:
+
+* http://www.westfield.com
+* https://www.westfield.com
+* http://uk.westfield.com
+* https://uk.westfield.com
+* http://www.westfield.com.au
+* https://www.westfield.com.au
+* http://www.westfield.co.nz
+* https://www.westfield.co.nz
+
+Click the `Manage Property` button to the far right of your chosen property to open up a drop dowwn, then click `Add or remove users`. This will load a list of users that have access to that property's data. Click the red `ADD A NEW USER` button and enter a Google Apps managed email address to invite the user. You'll also need to set a permission level which you can read up on [here](https://support.google.com/webmasters/answer/2453966?authuser=2&hl=en&authuser=2&visit_id=1-636150276346711523-1625895371&rd=1).
+
+All changes should be tracked in the [Systems Access Audit Sheet](https://docs.google.com/a/westfield.com/spreadsheets/d/1GGN0d8D2vJlg17qP-zEVvWvfcBEfOjmn40QTnVFrhSU/edit?usp=sharing) under the `Google Search Console` worksheet tab.
+
+## Google Developer Console
+
+## iTunes
+
 ## Algolia
 This is the provider of the search service that our Center Sites utilize. Algolia provides companies with a platform to implement search capabilities by indexing search items and providing a search box that initiates calls to Algolia’s API to do the heavy lifting so that we don’t have to.
 
