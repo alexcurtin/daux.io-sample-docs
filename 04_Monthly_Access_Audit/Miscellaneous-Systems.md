@@ -115,6 +115,6 @@ Make sure to track a list of removed users and apps removed from in the [Systems
 
 ## Spreedly
 
-Currently unable to remove users. Support ticket out to Spreedly to see who can administer accounts.
+Spreedly doesn't have a way in its UI to remove users, so the current solution is to email Spreedly support at support@spreedly.com and give them the email addresses for the users that need to be removed.
 
-
+Make sure to track a list of removed users in the [Systems Access Audit Sheet](https://docs.google.com/a/westfield.com/spreadsheets/d/1GGN0d8D2vJlg17qP-zEVvWvfcBEfOjmn40QTnVFrhSU/edit?usp=sharing) under the `Spreedly` worksheet tab.
