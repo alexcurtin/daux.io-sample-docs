@@ -113,6 +113,24 @@ Make sure to track a list of removed users and apps removed from in the [Systems
 
 ## WP Engine
 
+There are two pieces to this audit:
+
+1. WordPress Engine
+	
+	The [WP Engine Users](https://my.wpengine.com/accounts/doperations/users) page is a list of all users that can access the varying pieces of WordPress. Only Ops will have `Full` permissions or `Owner` status. The rest of the users should be sent to the Market Leads (US/UK/NZ/AU) for review.
+	
+2. Word Press Sites/Installs
+
+	From the [WP Dashboard](https://my.wpengine.com/dashboard), you'll see a list of `Installs` that pertain to the various sites Westfield uses on WordPress. Click on one of these and then look for to `WordPress Admin` link on the left side. Click that and use Lastpass to log in to the Admin page for that site and then click `Users`.
+	
+	This lists all users that are able to manage and update that specific site. **This is different from the list of users in WP Engine**. You will need to confirm with market leads whether or not these users should stay or be removed.
+	
+#### Market Leads:
+
+* US: Erik Even
+* UK: Rosendo Travieso
+* AU/NZ: Grant Howie
+
 ## Spreedly
 
 Spreedly doesn't have a way in its UI to remove users, so the current solution is to email Spreedly support at support@spreedly.com and give them the email addresses for the users that need to be removed.
