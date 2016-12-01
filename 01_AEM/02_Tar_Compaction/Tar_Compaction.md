@@ -43,9 +43,9 @@ Create the directory and then rsync only the repository over. We don't need the 
 - Delete past `sudo -u aem rm -f /mnt/aem/dumps/compaction.log` if it exists 
 - Run the compaction steps (change the memory option `-Xmx` as needed for type of EC2 instance)
 
-    $ sudo -u aem java -jar oak-run-1.2.18.jar checkpoints crx-quickstart/repository/segmentstore
-    $ sudo -u aem java -jar oak-run-1.2.18.jar checkpoints crx-quickstart/repository/segmentstore rm-unreferenced  
-    $ sudo -u aem nohup java -Dtar.memoryMapped=true -Doak.compaction.eagerFlush=true -server -Xmx20g -Dcompaction-progress-log=5000000 -Dlogback.configurationFile=logback-compaction.xml -Dcompress-interval=150000000 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/mnt/aem/dumps/compaction.log -jar oak-run-1.2.18.jar compact crx-quickstart/repository/segmentstore > oak-tar-compact-a0.log 2>oak-tar-error-a0.log &
+        $ sudo -u aem java -jar oak-run-1.2.18.jar checkpoints crx-quickstart/repository/segmentstore
+        $ sudo -u aem java -jar oak-run-1.2.18.jar checkpoints crx-quickstart/repository/segmentstore rm-unreferenced  
+        $ sudo -u aem nohup java -Dtar.memoryMapped=true -Doak.compaction.eagerFlush=true -server -Xmx20g -Dcompaction-progress-log=5000000 -Dlogback.configurationFile=logback-compaction.xml -Dcompress-interval=150000000 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/mnt/aem/dumps/compaction.log -jar oak-run-1.2.18.jar compact crx-quickstart/repository/segmentstore > oak-tar-compact-a0.log 2>oak-tar-error-a0.log &
 
 - Tail the logs to see progress: `tail -f dumps/compaction.log oak-tar-*`
 
