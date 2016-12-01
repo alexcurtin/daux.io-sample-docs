@@ -1,6 +1,6 @@
 ## Tar Compaction
 
-- remove dispatcher from ELB, wait 60 seconds for traffic to stop
+- remove dispatcher from ELB, wait 60 seconds for traffic to stop; if author publish fastly version 30 for maintenance page
 - downtime publisher in nagios
 - ssh to publisher using free-ipa credentials
 - stop monit so it doesn't alert `sudo service monit stop`
@@ -54,18 +54,18 @@ Create the directory and then rsync only the repository over. We don't need the 
 - `sudo service monit start`
 - tail logs at `/mnt/aem/crx-quickstart/logs` and ensure AEM starts up
 - run test suite that is in the aem_deploy repo against the publisher
-- if successful, add publisher back to ELB and move onto next publisher
+- if successful, add publisher back to ELB and move onto next publisher or if author, reactivate last active fastly version.
 
 ### If compaction breaks the AEM instance, restore from the backup you made earlier
 This will (re) stop monit and AEM. Restore the repository to your backup state (including deleting any new files that were created) and start AEM/monit once more back to your pre-compaction state. This decision should not be taken lightly, as you will have to schedule another compaction pretty soon to ensure the most optimal performance of the AEM Author.
 
     $ sudo service monit stop
     $ sudo -u aem /mnt/aem/crx-quickstart/bin/stop
-                $ sudo -u aem rsync --delete -Pav /mnt/aem/crx-quickstart{_$(date +%Y-%m-%d),}/repository/
-    $ sudo service monit start
+    $ sudo -u aem rsync --delete -Pav /mnt/aem/crx-quickstart{_$(date +%Y-%m-%d),}/repository/
     $ sudo -u aem /mnt/aem/crx-quickstart/bin/start
+    $ sudo service monit start
 
 ### Tar Compaction Completed - Clean up old backups
 In order to be a good Operations team member, you do not want to leave old backups around on disk. You're just going to create an alert that will fire, and wake up one of your colleagues at a bad hour. Don't be that guy.
 
-                $ sudo -u aem echo rm -rf -- /mnt/aem/crx-quickstart_*
+    $ sudo -u aem echo rm -rf -- /mnt/aem/crx-quickstart_*
