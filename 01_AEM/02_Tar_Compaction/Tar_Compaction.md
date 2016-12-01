@@ -5,10 +5,10 @@
 - ssh to instance using free-ipa credentials
 - stop monit so it doesn't alert `sudo service monit stop`
 - stop AEM: `sudo -u aem /mnt/aem/crx-quickstart/bin/stop`
-- Make a backup of the AEM folder. Realisically it only needs to be the repository folder, but for the sake of sanity. Take a copy of the entire workspace. You need to make sure there's no more than 33% of the current disk utilised before doing this. This is because a tar compaction will need at times, up to 100% of the current repository size as it writes out the new repo. This is important, do not be the guy that breaks AEM and has to explain to the business that they've caused a massive outage for the CMS. You should also pay attention and ensure that we have enough inodes available.
+- Make a backup of the AEM folder. Realisically it only needs to be the repository folder, but for the sake of sanity. Take a copy of the entire workspace. You need to make sure there's no more than 33% of the current disk utilised before doing this. This is because a tar compaction will need at times, up to 100% of the current repository size as it writes out the new repo. This is important, do not be the guy that breaks AEM and has to explain to the business that they've caused a massive outage for the CMS. You should also pay attention and ensure that we have enough inodes available.  
     
-    $ df -H /mnt/aem
-    $ df -i /mnt/aem
+      $ df -H /mnt/aem
+      $ df -i /mnt/aem
 
 If there is enough available space, and inodes - continue.
 
