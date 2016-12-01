@@ -88,7 +88,7 @@
 
 		$ java -jar oak-run-1.2.18.jar checkpoints crx-quickstart/repository/segmentstore
 		$ java -jar oak-run-1.2.18.jar checkpoints crx-quickstart/repository/segmentstore rm-unreferenced  
-		$ nohup java -Dtar.memoryMapped=true -Doak.compaction.eagerFlush=true -server -Xmx30g -Dcompaction-progress-log=5000000 -Dlogback.configurationFile=logback-compaction.xml -Dcompress-interval=150000000 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/mnt/aem/dumps/compaction.log -jar oak-run-1.2.18.jar compact crx-quickstart/repository/segmentstore > oak-tar-compact-a0.log 2>oak-tar-error-a0.log &
+		$ nohup java -Dtar.memoryMapped=true -Doak.compaction.eagerFlush=true -server -Xmx20g -Dcompaction-progress-log=5000000 -Dlogback.configurationFile=logback-compaction.xml -Dcompress-interval=150000000 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/mnt/aem/dumps/compaction.log -jar oak-run-1.2.18.jar compact crx-quickstart/repository/segmentstore > oak-tar-compact-a0.log 2>oak-tar-error-a0.log &
 
 
 - Tail the logs to see progress: `tail -f dumps/compaction.log oak-tar-*`
