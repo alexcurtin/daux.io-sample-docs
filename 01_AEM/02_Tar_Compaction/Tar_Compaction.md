@@ -1,8 +1,8 @@
 ## Tar Compaction
 
 - remove dispatcher from ELB, wait 60 seconds for traffic to stop; if author publish fastly version 30 for maintenance page
-- downtime publisher in nagios
-- ssh to publisher using free-ipa credentials
+- downtime instance in nagios
+- ssh to instance using free-ipa credentials
 - stop monit so it doesn't alert `sudo service monit stop`
 - stop AEM: `sudo -u aem /mnt/aem/crx-quickstart/bin/stop`
 - Make a backup of the AEM folder. Realisically it only needs to be the repository folder, but for the sake of sanity. Take a copy of the entire workspace. You need to make sure there's no more than 33% of the current disk utilised before doing this. This is because a tar compaction will need at times, up to 100% of the current repository size as it writes out the new repo. This is important, do not be the guy that breaks AEM and has to explain to the business that they've caused a massive outage for the CMS. You should also pay attention and ensure that we have enough inodes available.
@@ -53,7 +53,7 @@ Create the directory and then rsync only the repository over. We don't need the 
 - start AEM as user aem `sudo -u aem /mnt/aem/crx-quickstart/bin/start`
 - `sudo service monit start`
 - tail logs at `/mnt/aem/crx-quickstart/logs` and ensure AEM starts up
-- run test suite that is in the aem_deploy repo against the publisher
+- if publisher, run test suite that is in the aem_deploy repo against the instance
 - if successful, add publisher back to ELB and move onto next publisher or if author, reactivate last active fastly version.
 
 ### If compaction breaks the AEM instance, restore from the backup you made earlier
