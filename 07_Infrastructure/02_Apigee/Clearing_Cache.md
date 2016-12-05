@@ -18,7 +18,7 @@ To clear the cache for a single page, we'll need to build a curl command that re
         
 - Set a variable of the URI of the page to clear:
 
-        export URI=/stores/exampleid=1
+        export URI=/stores/48952
 
 - Now We have enough information to run the curl command to purge the cache:
 
