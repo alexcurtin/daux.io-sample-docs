@@ -35,6 +35,5 @@ Once you've run the install script with defaults, login to the admin panel at: h
 		#boot_pam_users.0=openvpn
 - Now prevent the OpenVPN user from loging using:
 
-		sudo passwd -l openvpn
-		
+		sudo passwd -l openvpn		
 - as they will be exempt from using the google authenticator.
